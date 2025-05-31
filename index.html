@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Літнє опитування</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h1>Як ти хочеш провести своє літо?</h1>
+    <form action="https://formspree.io/f/xeokjpkw" method="POST">
+      <input type="text" name="name" placeholder="Твоє ім’я" required />
+
+      <input type="number" name="age" placeholder="Скільки тобі років?" min="5" max="18" required />
+
+      <input type="text" name="place" placeholder="Куди хочеш поїхати?" required />
+
+      <label>Що тобі подобається більше?</label>
+      <select name="activity">
+        <option value="пляж">Пляж</option>
+        <option value="гори">Гори</option>
+        <option value="літній табір">Літній табір</option>
+        <option value="читати книги">Читати книги</option>
+        <option value="малювати">Малювати</option>
+      </select>
+
+      <label>Чи хочеш знайти нових друзів?</label>
+      <input type="radio" name="friends" value="Так" required /> Так
+      <input type="radio" name="friends" value="Ні" /> Ні
+
+      <textarea name="dream" placeholder="Опиши своє ідеальне літо..." required></textarea>
+
+      <button type="submit">Надіслати мрію 🌸</button>
+    </form>
+  </div>
+</body>
+</html>
+
+
